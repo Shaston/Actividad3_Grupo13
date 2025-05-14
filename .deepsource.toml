@@ -2,6 +2,17 @@ version = 1
 
 [[analyzers]]
 name = "javascript"
+enabled = true
+runtime_version = "18"
 
   [analyzers.meta]
   environment = ["nodejs"]
+  security = true
+
+[[analyzers]]
+name = "secrets"
+enabled = true
+
+[[transformers]]
+name = "docker"
+enabled = true
